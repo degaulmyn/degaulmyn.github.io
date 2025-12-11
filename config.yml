@@ -50,7 +50,7 @@ params:
           enabled: true
           title: Héloïse de Gaulmyn
           subtitle: "I am a Ph.D Candidate in the Center for Research in Economics and Statistics (CREST) at École Polytechnique, France. I work in environmental economics. I am particularly interested in how energy mixes choice form and what are their implications in the global economy."
-          imageUrl: "picture.jpeg"
+          imageUrl: "DSC_0235.JPG"
           imageWidth: 160
           imageHeight: 160
           buttons:
