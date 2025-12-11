@@ -24,7 +24,7 @@ menu:
 
 params:
     description: "This website hosts Héloïse de Gaulmyn's research papers, curriculum vitae, and contact information."
-    keywords:economics environmental economics energy CREST École Polytechnique PhD
+    keywords: economics environmental economics energy CREST École Polytechnique PhD
     author: Héloïse de Gaulmyn
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
