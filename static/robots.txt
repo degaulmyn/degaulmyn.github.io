@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://degaulmyn.github.io/sitemap.xml
