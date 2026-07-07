@@ -6,6 +6,4 @@ hidemeta: true
 
 ------------------------------------------------------------------------
 
-#### Héloïse de Gaulmyn's resume
-
-[**Download CV**](https://www.dropbox.com/scl/fi/ne9h3du04mhiz7tjixl71/resume_dec2025.pdf?rlkey=1mygqx46xysom5ue9n1ofxfd3&st=akclct1t&dl=0) (last updated in December 2025)
+[**Download CV**](https://www.dropbox.com/scl/fi/98any9uty7b3ltxdwi152/resume_apr2026.pdf?rlkey=z7npfn4ip5rsvymllprt8yvm9&st=wzb1kdoa&dl=0) (last updated in April 2026)

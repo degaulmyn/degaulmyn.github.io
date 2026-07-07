@@ -57,7 +57,7 @@ body {
   width: 100%;
   max-width: none;
   margin: 0 auto;
-  padding: 0.6rem var(--gap);
+  padding: 0.45rem var(--gap);
   gap: 1rem;
   box-sizing: border-box;
 }
@@ -95,7 +95,7 @@ body {
 
 .logo a img {
   display: block;
-  height: 28px;
+  height: 24px;
   width: auto;
 }
 
@@ -196,14 +196,20 @@ body {
   color: var(--text);
 }
 
-.home-section a {
+.home-section a,
+.post-content a,
+.entry-content a,
+.page-content a {
   color: #5f8094;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
 
-.home-section a:hover {
+.home-section a:hover,
+.post-content a:hover,
+.entry-content a:hover,
+.page-content a:hover {
   color: #7b9db0;
 }
 
