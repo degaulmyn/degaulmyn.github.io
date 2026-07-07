@@ -95,13 +95,13 @@ body {
 
 .logo a img {
   display: block;
-  height: 24px;
+  height: 34px;
   width: auto;
 }
 
 .logo a img[aria-label="secondary-logo"] {
   display: inline-block;
-  height: 22px;
+  height: 34px;
   width: auto;
   margin-left: 0.35rem;
 }
