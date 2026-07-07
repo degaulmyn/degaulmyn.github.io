@@ -1,7 +1,8 @@
 .nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     max-width: calc(var(--nav-width) + var(--gap) * 2);
     margin-inline-start: auto;
     margin-inline-end: auto;
@@ -28,7 +29,7 @@
 }
 
 .logo a {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -56,6 +57,7 @@ body:not(.dark) #sun {
 }
 
 #menu {
+    display: flex;
     list-style: none;
     word-break: keep-all;
     overflow-x: auto;
