@@ -82,11 +82,11 @@ params:
       text: "Héloïse de Gaulmyn"
       icon: crest_color_logo.png
       iconHeight: 32
-    favicon: tab_icon.png
-    favicon16x16: tab_icon.png
-    favicon32x32: tab_icon.png
-    apple_touch_icon: tab_icon.png
-    safari_pinned_tab: tab_icon.png
+    favicon: icon.ico
+    favicon16x16: icon-16x16.png
+    favicon32x32: icon-32x32.png
+    apple_touch_icon: apple-touch-icon.png
+    safari_pinned_tab: apple-touch-icon.png
 
 markup:
     goldmark:
