@@ -2,28 +2,26 @@
 {{- partial "home_hero.html" . }}
 {{- partial "home_highlights.html" . }}
 
-{{- if .Site.Params.profileMode.enabled }}
-<div class="home-profile-summary">
-  <h2>About</h2>
-  <p>{{ .Site.Params.profileMode.subtitle | markdownify }}</p>
-</div>
-{{- end }}
-
-{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
-{{- $paginator := .Paginate $pages }}
-{{- range $index, $page := $paginator.Pages }}
-<article class="post-entry">
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-      <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
-    </h2>
-  </header>
-  {{- if (ne ($page.Param "hideSummary") true) }}
-  <div class="entry-content">
-    <p>{{ $page.Summary | plainify | htmlUnescape }}{{ if $page.Truncated }}...{{ end }}</p>
-  </div>
+<section class="home-pages">
+  {{- with site.GetPage "research" }}
+  <article class="home-page-card">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Summary | plainify | htmlUnescape }}</p>
+  </article>
   {{- end }}
-</article>
-{{- end }}
+
+  {{- with site.GetPage "teaching" }}
+  <article class="home-page-card">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Summary | plainify | htmlUnescape }}</p>
+  </article>
+  {{- end }}
+
+  {{- with site.GetPage "resume" }}
+  <article class="home-page-card">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Summary | plainify | htmlUnescape }}</p>
+  </article>
+  {{- end }}
+</section>
 {{- end }}
