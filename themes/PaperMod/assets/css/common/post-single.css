@@ -70,8 +70,10 @@
 }
 
 .post-content a,
-.toc a:hover {
-    box-shadow: none;
+.toc a:hover,
+.post-content a:hover {
+    box-shadow: none !important;
+    text-decoration: none;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
@@ -387,7 +389,7 @@ h6:hover .anchor {
 }
 
 .paginav span:hover:not(.title) {
-    box-shadow: 0 1px 0;
+    box-shadow: none !important;
 }
 
 .paginav .next {
