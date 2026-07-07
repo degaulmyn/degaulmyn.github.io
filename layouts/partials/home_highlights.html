@@ -1,10 +1,9 @@
-<section class="home-highlights">
-  <div class="home-highlights__block">
-    <h2>Current focus</h2>
-    <p>My work explores energy transitions, climate policy, and the public economics of environmental regulation.</p>
+<section class="home-banner">
+  <div class="home-banner__photo">
+    <img src="{{ .Site.Params.profileMode.imageUrl | absURL }}" alt="Portrait of Héloïse de Gaulmyn" />
   </div>
-  <div class="home-highlights__block">
-    <h2>Contact</h2>
-    <p><a href="mailto:heloise.de_gaulmyn@ens-paris-saclay.fr">heloise.de_gaulmyn@ens-paris-saclay.fr</a></p>
+  <div class="home-banner__text">
+    <h1>{{ .Site.Params.profileMode.title | default site.Title }}</h1>
+    <p>{{ .Site.Params.profileMode.subtitle | markdownify }}</p>
   </div>
 </section>

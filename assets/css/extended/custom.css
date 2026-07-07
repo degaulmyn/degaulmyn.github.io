@@ -1,20 +1,19 @@
 :root {
   --accent: #4d6a47;
-  --accent-soft: #718a9f;
-  --text: #23323b;
-  --muted: #5b6a71;
-  --surface: rgba(255,255,255,0.95);
-  --border: rgba(77, 106, 71, 0.16);
+  --text: #111111;
+  --muted: #4e4e4e;
+  --background: #f7f2eb;
 }
 
 body {
-  background: #f7f2eb;
+  background: var(--background);
   color: var(--text);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 .header {
   background: transparent;
-  border-bottom: 1px solid rgba(35, 50, 59, 0.08);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
 }
 
 .nav {
@@ -31,107 +30,97 @@ body {
   letter-spacing: 0.02em;
 }
 
-.home-hero {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 1.5rem;
-  align-items: center;
-  margin-bottom: 1.2rem;
+.home-cover,
+.home-banner {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
-.home-hero__media img {
+.home-cover img {
   width: 100%;
-  max-height: 420px;
+  height: 72vh;
   object-fit: cover;
-  border-radius: 24px;
   display: block;
-  box-shadow: 0 12px 30px rgba(35, 50, 59, 0.12);
 }
 
-.home-hero__content {
-  padding: 0.4rem 0;
+.home-banner {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1.4rem;
+  align-items: center;
+  background: var(--accent);
+  color: white;
+  padding: 1.7rem 2rem;
 }
 
-.home-hero__eyebrow {
-  margin: 0 0 0.55rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.78rem;
-  color: var(--accent);
+.home-banner__photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.home-banner__text h1 {
+  margin: 0 0 0.45rem;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: white;
+}
+
+.home-banner__text p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.94);
+  line-height: 1.7;
+  max-width: 65ch;
+}
+
+.home-sections {
+  background: var(--background);
+  color: var(--text);
+  padding: 1.4rem 0 2rem;
+}
+
+.home-section {
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(17, 17, 17, 0.12);
+}
+
+.home-section:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.home-section h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
   font-weight: 700;
 }
 
-.home-hero h1 {
-  font-size: clamp(1.9rem, 2.8vw, 2.6rem);
-  line-height: 1.1;
-  margin-bottom: 0.7rem;
-}
-
-.home-hero p {
-  color: var(--muted);
-  font-size: 1rem;
+.home-section p {
+  margin: 0;
   line-height: 1.7;
+  color: var(--muted);
 }
 
-.home-hero__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1rem;
-}
-
-.home-hero__links a {
+.home-section a {
   color: var(--accent);
   text-decoration: none;
-  font-weight: 600;
-  border-bottom: 1px solid transparent;
-}
-
-.home-hero__links a:hover {
-  border-color: var(--accent);
-}
-
-.home-highlights {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.2rem;
-}
-
-.home-highlights__block,
-.home-page-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 1rem 1.1rem;
-  box-shadow: 0 8px 24px rgba(35, 50, 59, 0.05);
-}
-
-.home-highlights__block h2,
-.home-page-card h2 {
-  margin-top: 0;
-  margin-bottom: 0.4rem;
-  font-size: 1.02rem;
-}
-
-.home-pages {
-  display: grid;
-  gap: 1rem;
-}
-
-.home-page-card p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.65;
 }
 
 @media (max-width: 768px) {
-  .home-hero,
-  .home-highlights {
+  .home-banner {
     grid-template-columns: 1fr;
+    padding: 1.3rem 1rem;
   }
 
-  .home-hero__media img {
-    max-height: 300px;
+  .home-banner__photo img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .home-cover img {
+    height: 56vh;
   }
 }

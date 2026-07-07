@@ -2,26 +2,25 @@
 {{- partial "home_hero.html" . }}
 {{- partial "home_highlights.html" . }}
 
-<section class="home-pages">
-  {{- with site.GetPage "research" }}
-  <article class="home-page-card">
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+<section class="home-sections">
+  <section class="home-section">
+    <h2>Working papers</h2>
+    {{- with site.GetPage "research" }}
     <p>{{ .Summary | plainify | htmlUnescape }}</p>
-  </article>
-  {{- end }}
+    {{- end }}
+  </section>
 
-  {{- with site.GetPage "teaching" }}
-  <article class="home-page-card">
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  <section class="home-section">
+    <h2>Teaching</h2>
+    {{- with site.GetPage "teaching" }}
     <p>{{ .Summary | plainify | htmlUnescape }}</p>
-  </article>
-  {{- end }}
+    {{- end }}
+  </section>
 
-  {{- with site.GetPage "resume" }}
-  <article class="home-page-card">
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <p>{{ .Summary | plainify | htmlUnescape }}</p>
-  </article>
-  {{- end }}
+  <section class="home-section">
+    <h2>Contact</h2>
+    <p><a href="mailto:heloise.de_gaulmyn@ens-paris-saclay.fr">heloise.de_gaulmyn@ens-paris-saclay.fr</a></p>
+    <p><a href="{{ "location/" | absURL }}">Location and contact details</a></p>
+  </section>
 </section>
 {{- end }}
