@@ -41,9 +41,13 @@ body {
   z-index: 1000;
   width: 100%;
   box-sizing: border-box;
-  background: #5f8094;
-  border-bottom: 2px solid #5f8094;
+  background: #5f8094 !important;
+  border-bottom: 2px solid #5f8094 !important;
   box-shadow: none;
+}
+
+.nav {
+  background: #5f8094 !important;
 }
 
 .nav {
