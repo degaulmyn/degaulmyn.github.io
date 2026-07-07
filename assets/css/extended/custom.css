@@ -129,33 +129,41 @@ body {
   margin: 0 auto;
   padding: 1.5rem var(--gap);
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 1.4rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 1.6rem;
+}
+
+.home-banner__photo {
+  flex: 0 0 auto;
 }
 
 .home-banner__photo img {
-  width: 260px;
-  height: 260px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   display: block;
   border-radius: 0;
   box-shadow: none;
 }
 
+.home-banner__text {
+  flex: 0 1 520px;
+}
+
 .home-banner__text h1 {
-  margin: 0 0 0.45rem;
-  font-size: 2rem;
-  line-height: 1.1;
+  margin: 0 0 0.4rem;
+  font-size: 1.6rem;
+  line-height: 1.15;
   color: white;
 }
 
 .home-banner__text p {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
   color: rgba(255, 255, 255, 0.94);
-  line-height: 1.7;
-  max-width: 65ch;
+  font-size: 0.92rem;
+  line-height: 1.6;
 }
 
 .home-banner__text p:last-child {
@@ -235,13 +243,18 @@ body {
 
 @media (max-width: 768px) {
   .home-banner__inner {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
     padding: 1.3rem var(--gap);
   }
 
+  .home-banner__text {
+    flex-basis: auto;
+  }
+
   .home-banner__photo img {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
 
   .home-cover img {
