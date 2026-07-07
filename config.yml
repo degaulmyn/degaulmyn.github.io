@@ -80,8 +80,8 @@ params:
         hiddenInSingle: true
     label:
       text: "Héloïse de Gaulmyn"
-      icon: favicon.ico
-      iconHeight: 18
+      icon: crest_color_logo.png
+      iconHeight: 32
 
 markup:
     goldmark:

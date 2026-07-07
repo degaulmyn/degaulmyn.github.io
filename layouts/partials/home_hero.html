@@ -1,0 +1,15 @@
+{{- $cover := "CFPP_Poland.jpeg" -}}
+<section class="home-hero">
+  <div class="home-hero__media">
+    <img src="{{ $cover | absURL }}" alt="Landscape cover image" />
+  </div>
+  <div class="home-hero__content">
+    <p class="home-hero__eyebrow">Environmental economics • Energy transition</p>
+    <h1>Research on climate policy, energy systems, and public decision-making.</h1>
+    <p>I study how environmental policies shape energy choices and economic outcomes, with a focus on the transition toward cleaner systems.</p>
+    <div class="home-hero__actions">
+      <a class="button button--primary" href="{{ "research/" | absURL }}">Explore research</a>
+      <a class="button button--secondary" href="{{ "teaching/" | absURL }}">View teaching</a>
+    </div>
+  </div>
+</section>
