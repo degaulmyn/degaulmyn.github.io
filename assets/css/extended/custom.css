@@ -129,7 +129,9 @@ body {
 
 .home-section a {
   color: #315a72;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.18em;
   font-weight: 600;
 }
 
