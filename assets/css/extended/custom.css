@@ -51,6 +51,7 @@ body {
   max-width: calc(var(--main-width) + var(--gap) * 2);
   margin: 0 auto;
   padding: 0.65rem var(--gap);
+  gap: 1rem;
 }
 
 .logo a {
@@ -63,15 +64,25 @@ body {
   color: var(--text);
 }
 
+#menu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 #menu a {
-  color: var(--text);
+  color: var(--accent);
   font-weight: 600;
   text-decoration: none;
 }
 
 #menu a:hover,
 #menu .active {
-  color: var(--text);
+  color: var(--accent);
 }
 
 .logo a img {
