@@ -1,9 +1,11 @@
 <section class="home-banner">
-  <div class="home-banner__photo">
-    <img src="{{ .Site.Params.profileMode.imageUrl | absURL }}" alt="Portrait of Héloïse de Gaulmyn" />
-  </div>
-  <div class="home-banner__text">
-    <h1>{{ .Site.Params.profileMode.title | default site.Title }}</h1>
-    <p>{{ .Site.Params.profileMode.subtitle | markdownify }}</p>
+  <div class="home-banner__inner">
+    <div class="home-banner__photo">
+      <img src="{{ .Site.Params.profileMode.imageUrl | absURL }}" alt="Portrait of Héloïse de Gaulmyn" />
+    </div>
+    <div class="home-banner__text">
+      <h1>{{ .Site.Params.profileMode.title | default site.Title }}</h1>
+      <p>{{ .Site.Params.profileMode.subtitle | markdownify }}</p>
+    </div>
   </div>
 </section>
