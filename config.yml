@@ -65,9 +65,9 @@ params:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:heloise.de_gaulmyn@ens-paris-saclay.fr
-        - name: Zoom
-          url: https://zoom.us/launch/chat?src=direct_chat_link&email=heloise.de-gaulmyn%40polytechnique.edu
+          url: mailto:heloise.de_gaulmyn@polytechnique.edu
+        - name: Teams
+          url: https://teams.microsoft.com/l/chat/0/0?users=heloise.degaulmyn@ensae.fr
         - name: Location
           url: location/
         - name: GitHub
