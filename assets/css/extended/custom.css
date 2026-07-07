@@ -206,11 +206,16 @@ body {
 .home-section a,
 .post-content a,
 .entry-content a,
-.page-content a {
+.page-content a,
+.post-content a:hover,
+.entry-content a:hover,
+.page-content a:hover {
   color: #5f8094;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.16em;
+  box-shadow: none !important;
+  border-bottom: none !important;
 }
 
 .home-section a:hover,
