@@ -5,6 +5,14 @@
   --muted: #111111;
   --background: #f7f0e8;
   --surface: #f7f0e8;
+
+  /* scaled down from theme defaults to match the banner text size */
+  --homesize: 15px;
+  --textsize: 16px;
+  --h1size: 22px;
+  --entrysize: 14px;
+  --headersize: 15px;
+  --footersize: 12px;
 }
 
 html,
@@ -12,6 +20,7 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
   min-height: 100vh;
 }
 

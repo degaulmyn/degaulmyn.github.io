@@ -5,7 +5,7 @@
 
 .post-title {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .post-description {
@@ -16,7 +16,7 @@
 .post-meta,
 .breadcrumbs {
     color: var(--secondary);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .post-meta .i18n_list li {
@@ -41,27 +41,27 @@
 
 .post-content h1 {
     margin: 40px auto 32px;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .post-content h2 {
     margin: 32px auto 24px;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .post-content h3 {
-    font-size: 19px;    
+    font-size: 18px;
 }
 
 .post-content h4 {
-    font-size: 15px;    
+    font-size: 14px;
     font-weight: var(--semibold);
     text-transform: uppercase;
     color: var(--gray);
 }
 
 .post-content h5 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: var(--semibold);
     text-transform: uppercase;
     color: var(--gray);
@@ -151,7 +151,7 @@
 
 .post-content table th {
     text-align: start;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: var(--semibold);
     text-transform: uppercase;
     color: var(--gray);
@@ -254,14 +254,14 @@
 
 .post-content figure > figcaption {
     color: var(--primary);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     margin: 8px 0 16px;
 }
 
 .post-content figure > figcaption > p {
     color: var(--secondary);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
 }
 
@@ -295,14 +295,14 @@
     display: inline;
     font-weight: var(--semibold);
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .toc .inner {
     margin: 5px 20px 0;
     padding: 0 10px;
     opacity: 0.9;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .toc li ul {
@@ -343,7 +343,7 @@
     display: block;
     padding: 0 10px;
     color: var(--secondary);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 32px;
     background: var(--code-bg);
 }
