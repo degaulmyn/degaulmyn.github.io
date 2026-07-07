@@ -80,7 +80,7 @@ params:
         hiddenInSingle: true
     label:
       text: "Héloïse de Gaulmyn"
-      icon: crest_color_logo.png
+      icon: crest_white_logo.png
       iconHeight: 32
     favicon: icon.ico
     favicon16x16: icon-16x16.png
