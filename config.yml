@@ -75,6 +75,10 @@ params:
 
     assets:
         disableScrollBarStyle: true
+        favicon: icon.ico
+        favicon16x16: icon-16x16.png
+        favicon32x32: icon-32x32.png
+        apple_touch_icon: apple-touch-icon.png
     cover:
         hiddenInList: false
         hiddenInSingle: true
@@ -82,11 +86,6 @@ params:
       text: "Héloïse de Gaulmyn"
       icon: crest_white_logo.png
       iconHeight: 32
-    favicon: icon.ico
-    favicon16x16: icon-16x16.png
-    favicon32x32: icon-32x32.png
-    apple_touch_icon: apple-touch-icon.png
-    safari_pinned_tab: apple-touch-icon.png
 
 markup:
     goldmark:
